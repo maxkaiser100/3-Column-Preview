@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Lexend-Deca', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cardSet {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card {
+    max-width: 23rem;
+    background-color: hsl(184, 100%, 22%);
+    padding: 1rem 3rem;
+    border-radius;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card img{
+    width: 30%;
+    margin-top: 2rem;
+}
+
+.topCard {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.bottomCard {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card p {
+    line-height: 2;
+}
+
+.card h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+
+.buttonReady {
+    background-color: #FFF;
+    max-width: 10rem;
+    height: 3.5rem;
+    border-radius: 40px;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    margin: 2rem 0;
+    text-decoration: none;
+    color:hsl(31, 77%, 52%);
+}
+
+
+.buttonReady:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: #FFF;
+}
+
+
+
+@media only screen and (min-width: 780px) {
+    .cardSet {
+        flex-direction: row;
+    }
+
+    .card {
+        height: 40rem;
+    }
+
+    .card p{
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .buttonReady {
+        margin-top: 9.5rem;
+    }
+}
